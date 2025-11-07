@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-color: #1a1a1a; /* color de respaldo */
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00ff;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  color: #222222;
+  animation: fadeIn 1.2s ease-in;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#mensajes form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#mensajes input,
+#mensajes textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#mensajes button {
+  padding: 10px;
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#mensajes button:hover {
+  background-color: #cc00cc;
+}
+/* ---------- Sección "Este es tu lugar" ---------- */
+#lugar {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+#lugar h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff00ff;
+}
+
+#lugar p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+#lugar .cta {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ff00ff;
+  margin-top: 1rem;
+}
+/* ----- Estilo visual nuevo ----- */
+:root {
+  --rosa: #ff00ff;
+  --rosa-suave: #ff99ff;
+  --fondo-card: rgba(255, 255, 255, 0.95);
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff00ff, #ff99ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: var(--rosa);
+  margin-bottom: 1rem;
+}
+
+section {
+  background: var(--fondo-card);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}
+
+.cta {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--rosa);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+body {
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
